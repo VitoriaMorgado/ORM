@@ -1,6 +1,10 @@
 const express = require("express");
 // const produtos = require('../produtos');
 const produtos = require('../models/produtos');
+const clientes = require('../models/clientes');
+const pedidos = require('../models/pedidos');
+const rlPedidosProdutos = require('../models/rel_pedidos_produtos');
+const sequelize = require('./db/conn');
 
 const app = express();
 
