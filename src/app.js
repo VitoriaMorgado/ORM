@@ -1,11 +1,11 @@
 const express = require("express");
 // const produtos = require('../produtos');
 const produtos = require('../models/produtos');
+const data_produtos = require("../produtos");
 const clientes = require('../models/cliente');
 const pedidos = require('../models/pedidos');
 const rlPedidosProdutos = require('../models/rel_pedidos_produtos');
 const sequelize = require('./db/conn');
-
 const app = express();
 
 // analisar o payload JSON recebido e disponibilizar esses dados no  req.body  
