@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const database = require("../db/conn");
+const database = require("../src/db/conn");
 
 const Pedidos = database.define(
   "pedidos",
